@@ -1,0 +1,820 @@
+
+/* Inicio Globales */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    scroll-behavior: smooth;
+}
+body{    
+    background-image: linear-gradient(to top, #a8edea 0%, #fed6e3 100%);
+    font-family: sans-serif;    
+    line-height: 1.5;
+}
+/* Fin Globales */
+
+/* Inicio Header */
+.header{
+    height: 70px;    
+    width: 100%;
+    top: 0;
+    left: 0;
+    margin-bottom: 10px;
+}
+.main-title{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;   
+}
+.logo-txt{
+    font-size: 38px;
+    color: #eeebe5;
+    margin-left: 5px ;
+}
+h1 span{
+    color: #0a1416;
+    font-size: 30px;
+}
+/* Fin Header */
+
+/* Inicio Nav */
+.cont-nav{    
+    display: flex;
+    justify-content: space-between;
+    width: 100%;    
+    margin: 0 auto;
+    background-image: linear-gradient(to top, #a8edea 0%, #fed6e3 100%);
+}
+.nav-link{
+    color: rgb(3, 3, 3);
+    text-decoration: none;
+}
+.logo-head{
+    display: flex;    
+}
+.logo-img{
+    margin: 10px;
+    width: 58px;
+    height: 50px;       
+}
+.logo-txt{
+    font-size: 38px;    
+    font-family: sans-serif;
+    color: #131111;
+    margin: 10px;
+}
+.x{
+    font-size: 20px;
+    color: #101444;
+    font-weight: bold;
+    text-align: center;
+    margin: 0 15px;
+}
+.nav-menu{
+    display: flex;
+    margin-right: 10px;
+    list-style: none;
+}
+.nav-menu-item{
+    font-size: 18px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 10px 5px;
+    line-height: 50px;
+    text-transform: uppercase;
+    width: max-content;
+}
+.nav-menu-link{
+    padding: 8px 12px;
+}
+.nav-menu-link:hover{
+    background-color: rgb(62, 105, 185);
+    border-radius: 3px;
+    color: rgb(255, 255, 255);
+    transition: 0.5s;
+}
+/* Fin Nav */
+
+/* Inicio Main */
+
+.contenedor-main{
+    width: 100%;
+    max-width: 1200px;    
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    gap: 5px;
+    margin-top: 235px;    
+}
+.info{
+    color: #000000;
+    font-family: 'Lato', sans-serif;
+    line-height: 1;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Inicio de CSS de ¿Quienes Somos? */
+.cont-qs{
+    width: 80%;
+    margin: 0 auto;
+    /* border: 2px solid black; */
+}
+.img-info{
+    width: 100%;
+    border-radius: 20%;
+    border: 2px solid black;
+    margin-top: 20px;    
+    grid-column: 1/2;
+    grid-row: 2/-2;
+}
+.img-info:last-child{
+    border: none;
+}
+.img-caption{
+    font-size: 12px;
+    font-weight: bold;
+    font-family: 'Roboto Mono', monospace;
+}
+.info-qs p:last-of-type{
+    margin-left: 40px;
+    text-align: center;
+}
+.info-qs{
+    width: 80%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 30% 70%;
+    /* border: 2px solid black; */
+    justify-content: center;
+}
+.info-qs-main {
+    /* border: 2px solid black; */
+    display: inline-block;
+    margin: 10px;
+}
+.info-qs-main p{
+    font-size: 30px;
+    text-align: center;
+    line-height: 1.5;
+    padding: 5px;
+    
+}
+.escom{
+    font-family: 'Bebas Neue', cursive;
+    font-size: 40px;
+    color: #005aa7;
+}
+
+.cards-cont{
+    width: 100%;
+    /* border: 2px solid black; */
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+.card-qs{
+    width: 30%;
+    background: linear-gradient(to right, #fdc830, #f37335); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    border-radius: 10%;
+}
+.sub-qs{
+    font-family: 'Bebas Neue', cursive;
+    font-size: 35px;
+    text-align: center;
+    font-weight: bold;
+    margin: 20px auto;
+    padding: 10px;
+    width: 100%;
+    border: 2px solid black;
+    border-radius: 15%;
+    background: linear-gradient(to top, #005aa7, #fffde4); 
+}
+.ind-info{
+    line-height: 1.5;
+}
+/* Fin de CSS de ¿Quienes Somos? */
+/* Inicio de CSS de Servicios */
+.boton a{
+    color: #fff;
+}
+.hcontenedor{    
+    width: 90%;
+    max-width: 1200px;
+    overflow: hidden;
+    margin: auto;
+    padding: 60px 0;    
+}
+.contenedor{
+	width: 90%;
+	max-width: 1200px;
+	margin: auto;
+	padding: 40px 0;
+    display: flex;
+    gap:20px;
+    border-radius: 10px;
+	background-size: cover;
+	background-position: center center;
+}
+.contenedor h3{
+    color: #fff;
+}
+.header{
+    height: 130vh;
+    background-image: linear-gradient(to top,rgba(11, 35, 139, 0.5) 0%, rgba(10, 59, 104, 0.5) 100%),url(../img/serviciosimg/fondoM.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+.head{
+    padding: 0;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: #fff;
+}
+.hamburguer{
+    position:fixed;
+    top: 75px;
+    left: 20px;
+    background: #fff;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    border-radius: 10px;
+    box-shadow: 0 0 6px rgba(0, 0,0, .5);
+    z-index: 2;
+}
+.menu-navegacion{
+    position: fixed; /*fixed*/
+    top: 0;
+    left: 0;
+    width: 30vw;
+    height: 100%;
+    background-image: linear-gradient(to top, #d299c2 0%, #fef9d7 100%);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    transition: transform .3s ease-in-out;
+    transform: translate(-110%);
+    box-shadow: 0 0 6px rgba(0, 0,0, .5);
+    overflow: hidden;
+    z-index:1;
+}
+.spread{
+    transform: translate(0);
+}
+.menu-navegacion a{
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+.titulo{
+    font-size: 50px;
+    margin-bottom: 10px;
+}
+.copy{
+    font-weight: 300;
+    font-size: 25px;
+}
+/*Seccion del contendor de Servicio*/
+.subtitulo{
+    text-align: center;
+    font-weight: 500;
+    color: #6c4faf;
+    margin-bottom: 40px;
+    font-size: 50px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;   
+}
+.contenedor-servicio{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.contenedor-servicio img{
+    width: 50%;
+    height: 400px;
+}
+.checklist-servicio{
+    width: 45%;
+}
+.servicio{
+    margin-bottom: 50px ;
+}
+.n-servicio{
+    margin-bottom: 7px;
+    color: #9f8ad0;
+}
+.number{
+    display: inline-block;
+    background-image: linear-gradient(to top, #9890e3 0%, #b1f4cf 100%);
+    width: 30px;
+    height: 30px;
+    color: #fff;
+    text-align: center;
+    border-radius: 50%;
+    font-weight: 700;
+    line-height: 30px;
+    margin-right: 5px;
+}
+/*Estilo para las secciones de Servicio*/
+.contenedor-office {
+	width:100%;
+    border-radius: 10px;
+}
+.contenedor-texto{
+width: 90%;
+margin: 10px auto;
+padding: 10px;
+}
+.logoimagen{      
+    width: 300px;
+    height: 200px;
+    float: right;
+    margin-left: 15px;
+}
+.card {
+	border-radius: 10px;
+	min-height: 250px;
+	font-weight: bold;
+	padding: 20px;
+	position: relative;
+	overflow: hidden;
+	background-size: cover;
+	background-position: center center;
+    border-color: black;
+    display: flex;
+    flex-wrap: wrap;
+}
+.card .textos {
+	height: 90%;	
+	display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: aliceblue;
+    gap: 10px;
+}
+.banner {
+	border-radius: 10px;
+    /*text-align: center;*/
+    align-items: center;
+    justify-content: center;
+	padding: 20px;
+	background-size: cover;
+	background-position: center center;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.banner .boton {	
+    display:  inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 60%;
+    height: 40px;
+    border-radius: 100px;
+    background:#141414;
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    border: none;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: .3s ease all;
+    position: relative;
+    overflow: hidden;/*respeta los borders redondeados*/
+}
+.boton span{
+    position: relative;
+    z-index: 2;
+    transition: .3s ease all;
+}
+#boton1::after{
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: #c4b107;
+    position: absolute;
+   /* z-index: 1;*/
+    top: -80px;
+    left: 0;
+    transition: .3s ease-in-out all;
+}
+#boton1:hover::after{
+    top: 0;
+    background: #c91212;
+}
+.slider{
+    display: flex;
+    width: 270%;
+    height: 140px;
+    margin-left: -107%;
+    gap:30px;
+}
+.contenedor-slider{
+    width: 100%;
+    max-width: 280px;
+    margin: auto;    
+    overflow: hidden;
+    box-shadow: 0 0 0 10px #ffffff, 0 15 px 50px;
+    position: relative;
+}
+.slider-section{
+    width: 140%;
+}
+.slider-sectiondos{
+    width: 140%;
+}
+.slider-sectiontres{
+    width: 140%;
+}
+.slider-img{
+    display: block;
+    width: 150px;
+    height: 100%;
+    object-fit: cover;
+}
+.slider-btn{
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background: rgba(255,255,255,0.7);
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 30px;
+    font-weight: bold;
+    font-family: monospace;
+    text-align: center;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.slider-btn:hover{
+    background-color: #fff;
+}
+.slider__btn--left{
+    left: 15px;
+}
+.slider__btn--right{
+    right: 15px;
+}
+.img-servicio{
+    border-radius: 10%;
+}
+/* Fin de CSS de Servicios */
+
+/* Inicio de CSS de Oportunidades */
+.cont-op{
+    width: 100%;
+    /* border: 2px solid black; */
+    display: flex;
+    justify-content: space-evenly;
+}
+.card-op{
+    height: 290px;
+    width: 30%;
+    overflow: hidden;
+    margin: auto;
+    padding: 10px 30px;
+    border-radius: 2%;
+    border: 1px solid white;
+    transition: all .4s ease-in-out;
+    box-shadow: 0px 1px 5px 0px rgba(0, 0,0, .3);
+    text-align: center;
+    background: url(../imagenes/double-bubble.png);
+}
+.card-op:hover{
+    height: 720px;
+    width: 30%;
+    border-radius: 5px;
+    box-shadow: 0px 2px 10px rgba(0, 0,0, .5);
+    cursor: pointer;
+}
+
+.img-card-op{
+    position: relative;
+    border-radius: 50%;
+    display: block;
+    height: 200px;
+    width: 200px;
+    border-top: 8px solid white;
+    border-bottom: 8px solid white;
+    object-fit: cover;
+    margin: 20px auto;
+    transition: all 0.5s ease;
+}
+.card-title{
+    width: 100%;       
+    margin: 10px 0;
+    background-color: #005aa7;
+    border-radius: 10px;
+    padding: 2px;
+}
+.head-op{
+    color: #0e1d2b;
+    font-size: 20px; 
+}
+.card-body{
+    width: 80%;
+    margin: 0 auto;
+    text-align: left;
+}
+.list-op{
+    list-style: square;
+}
+.info-op{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 15px;
+    margin: 10px;
+}
+.ultimo{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    font-size: 15px;
+    color: red;
+}
+.info-op-foot{
+    text-align: center;
+    margin: 10px;
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+
+
+/* Fin de CSS de Oportunidades */
+
+/* Inicio de CSS de Contacto */
+.contenedor-contacto{
+    width: 40%;
+    border: 2px solid 5f1d1d;
+    border-radius: 20px;
+    background-color: #5f1d1d;
+    margin: 10px auto;
+}
+.cont-section{   
+    text-align: center; 
+    border-radius: 20%;
+    width: 90%;
+    margin: 0 auto;
+}
+.cont-info-contacto{
+    display: flex;
+    justify-content: space-around;
+}
+.info-contacto{
+    font-weight: bold;
+    font-family: 'Bakbak One', cursive;
+    font-size: 18px;
+    margin-top: 15px;
+}
+.contenedor-contacto:last-of-type{
+    width: 70%;
+    border: 2px solid 5f1d1d;
+    border-radius: 20px;
+    background-color: #5f1d1d;
+    margin: 10px auto;
+}
+
+.datos-alum-cont{
+    font-family: 'Roboto Mono', monospace;
+    list-style: none;
+    text-align: left;
+    color: #abbaab;
+    font-size: 20px;
+    margin: 10px;
+}
+.correo{
+    color: #000000;
+    font-size: 18px;
+}
+/* Fin de CSS contacto */
+
+/* Inicio Form */
+.cont-form{
+    width: 35%;
+    margin: 40px auto;
+    border: 2px solid black;
+    border-radius: 30px;
+    padding: 10px;
+    background: linear-gradient(to top, #ada996, #f2f2f2, #dbdbdb, #eaeaea); 
+}
+.titulo-form{
+    font-size: 25px;
+    text-align: center;
+    color: #0d1414;
+    margin: 10px;
+}
+.cont-datos{
+    width: 100%;
+    /* border: 2px solid black; */
+    margin: auto;
+    padding: 10px 10px;
+    display: flex;
+    flex-direction: column;
+}
+.sexo{
+    width: 90%;
+    display: flex;
+    /* border: 2px solid black; */
+    justify-content: space-between;    
+    margin: 10px auto;
+    margin-bottom: 15px ;    
+}
+.opcion-sexo{
+    border: 2px solid #d42a1e;
+    border-radius: 10px;
+    padding: 5px;
+    color: rgb(10, 6, 6);    
+    margin-top: 5px;
+    background-color: #eeedf5;
+}
+.opcion-sexo:hover{
+    cursor: pointer;
+    background-color: #c8c7cc;
+
+    transition: 0.5s;
+
+}
+.opcion-sexo label:hover{
+    cursor: pointer;
+    background-color: #c8c7cc;
+
+    transition: 1.5s;
+}
+
+.opcion-sexo input:checked + label{
+    color: rgb(255, 5, 5);
+}
+
+.etiqueta{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+    
+}
+.entrada{
+    margin-top: 5px;
+    margin-bottom: 15px;
+    padding: 5px;
+}
+.boton{
+    background: linear-gradient(135deg, #71b7e6, #9b59b6); 
+    font-size: 30px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    width: 50%;
+    margin: 20px auto;
+    box-shadow: 4px 8px 8px -3px rgba(0,0,0,0.75);
+}
+.boton:hover{
+    cursor: pointer;
+    color: #eeebe5;
+    background: linear-gradient(135deg, #103046, #40214d); 
+    transition: ease-out 1s;
+}
+/* Fin Form */
+/* Fin Main */
+
+
+/* Inicio Footer */
+.container{
+    max-width: 1170px;
+    margin: auto;     
+}
+.row{
+    display: flex;
+    flex-wrap: nowrap;
+}
+.footer{
+    background-color: rgb(37, 80, 80);
+    margin-top: 20px;    
+}
+.footer-col{
+    width: 33.3%;
+    margin: 20px;
+}
+.titulo-foot{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    color: wheat;
+    text-align: center;
+    margin-top: 20px;
+}
+.info-foot{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 15px;
+    color: whitesmoke;
+    margin: 10px;
+    text-align: center;
+}
+.contacto-txt{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 15px;
+    color: wheat;
+    margin-top: 40px;
+    text-align: center;
+    margin: 10px;
+}
+.mapa{
+    display: flex;
+    justify-content: space-evenly;    
+}
+.rs{
+    margin: 5px;
+}
+.logos{
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+}
+.txt-footer{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 15px;
+    color: #eeebe5;
+    text-align: center;
+    margin: 20px;
+}
+.linea{
+    border: 3px solid black;
+}
+.datos-alumnos{
+    list-style: none;
+    color: #abbaab;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 15px;
+    text-align: left;
+}
+.boleta{
+    font-size: 12px;
+    font-weight: bold;
+    color: #000000;
+}
+
+.sub{
+    width: 10%;
+    color: white;
+    background-color: #103046;
+    border-radius: 10px;
+    margin: 10px auto;
+    margin-top: 30px;
+}
+/* Fin Footer */
+
+/* Inicio CSS de la respuesta */
+.contenedor-php{
+    width: 100%;
+    margin: auto;    
+    padding: 150px;
+}
+.titulo-php{
+    font-size: 70px;
+    font-weight: bold;
+    font-family: 'Rubik', sans-serif;
+    text-align: center;
+}
+.line{
+    width: 75%;
+    margin: 0 auto;
+    border: 2px solid #103046;
+}
+.mensaje{
+    color:#0f0b0b;
+    font-size: 30px;
+    font-family: 'Fira Sans', sans-serif;
+    text-align: center;
+    line-height: 1.5;
+}
+.span-php{
+    color: #103046;
+    font-size: 40px;
+    font-weight: bold;
+    font-family: 'Bakbak One', cursive;
+}
+.boton-regreso{
+    width: 18%;
+    margin:20px;
+    background: linear-gradient(to right, #8360c3, #2ebf91);
+}
+.boton-regreso:hover{
+    background: linear-gradient(to right, #473569, #1b7055);
+    transition: ease-out 1.5s;
+    cursor: pointer;
+}
+.boton-regreso a:hover{
+    color: white;
+    transition: ease-out .5s;
+}
+.boton-regreso a{
+    /* width: 100%; */
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-family: 'Bakbak One', cursive;
+    font-size: 20px;
+}
+/* Fin Css de la Respuesta */
