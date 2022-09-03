@@ -1,98 +1,4 @@
 
-/* Inicio Globales */
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-:root{
-    scroll-behavior: smooth;
-}
-body{    
-    background-image: linear-gradient(to top, #a8edea 0%, #fed6e3 100%);
-    font-family: sans-serif;    
-    line-height: 1.5;
-}
-/* Fin Globales */
-
-/* Inicio Header */
-.header{
-    height: 70px;    
-    width: 100%;
-    top: 0;
-    left: 0;
-    margin-bottom: 10px;
-}
-.main-title{
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;   
-}
-.logo-txt{
-    font-size: 38px;
-    color: #eeebe5;
-    margin-left: 5px ;
-}
-h1 span{
-    color: #0a1416;
-    font-size: 30px;
-}
-/* Fin Header */
-
-/* Inicio Nav */
-.cont-nav{    
-    display: flex;
-    justify-content: space-between;
-    width: 100%;    
-    margin: 0 auto;
-    background-image: linear-gradient(to top, #a8edea 0%, #fed6e3 100%);
-}
-.nav-link{
-    color: rgb(3, 3, 3);
-    text-decoration: none;
-}
-.logo-head{
-    display: flex;    
-}
-.logo-img{
-    margin: 10px;
-    width: 58px;
-    height: 50px;       
-}
-.logo-txt{
-    font-size: 38px;    
-    font-family: sans-serif;
-    color: #131111;
-    margin: 10px;
-}
-.x{
-    font-size: 20px;
-    color: #101444;
-    font-weight: bold;
-    text-align: center;
-    margin: 0 15px;
-}
-.nav-menu{
-    display: flex;
-    margin-right: 10px;
-    list-style: none;
-}
-.nav-menu-item{
-    font-size: 18px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    margin: 10px 5px;
-    line-height: 50px;
-    text-transform: uppercase;
-    width: max-content;
-}
-.nav-menu-link{
-    padding: 8px 12px;
-}
-.nav-menu-link:hover{
-    background-color: rgb(62, 105, 185);
-    border-radius: 3px;
-    color: rgb(255, 255, 255);
-    transition: 0.5s;
-}
-/* Fin Nav */
 
 /* Inicio Main */
 
@@ -220,14 +126,14 @@ h1 span{
 .contenedor h3{
     color: #fff;
 }
-.header{
-    height: 130vh;
+/* .header{
+    height: 13rem;
     background-image: linear-gradient(to top,rgba(11, 35, 139, 0.5) 0%, rgba(10, 59, 104, 0.5) 100%),url(../img/serviciosimg/fondoM.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
     background-position: center;
-}
+} */
 .head{
     padding: 0;
     height: 100%;
