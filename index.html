@@ -4,7 +4,8 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <!-- <link rel="stylesheet" href="./css/styles.css">               -->
-        <link rel="stylesheet" href="./css/estilos.css">              
+        <link rel="stylesheet" href="./css/estilos.css">
+        <link rel="stylesheet" href="./css/normalize.css">
         <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
         <!-- Fuentes de Google -->
         <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet">
@@ -13,8 +14,10 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">   
-        <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@600&display=swap" rel="stylesheet">    
-        <title>Microsoft en ESCOM</title>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@600&display=swap" rel="stylesheet">  
+        <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@100;300;600;700;900&family=Quicksand&display=swap" rel="stylesheet">  
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glider-js@1.7.3/glider.min.css">
+        <title>Microsoft en ESCOM EL BUENO</title>
     </head>
 
     <body>
@@ -23,11 +26,9 @@
                 <a href="#head"><img class="logo-img" src="./img/2.png" alt="LogoWindows" ></a>
                 <a href="#head"><img class="logo-img" src="./img/logo_Escom.png" alt="LogoEscom"></a>
             </div>
-
             <div class="hamburguer">
                 <img src="./img/serviciosimg/hamburguesa.svg" alt="icono-hamburguesa">
             </div>
-
             <nav>               
                 <ul class="nav-menu">
                     <li class="nav-menu-item"><a href="#head" class="nav-menu-link">Inicio</a></li>
@@ -37,47 +38,147 @@
                     <li class="nav-menu-item"><a href="#contacto" class="nav-menu-link">Contacto</a></li>
                 </ul>
             </nav>       
-
-
-            
         </header>
+
+        <section class="bienvenida">
+            <img src="./img/fondoMic2.jpeg" alt="">
+            <p>Bienvenido al <br> portal <br><span class="bienvenida-span"> MICROSOFT </span> X <span class="bienvenida-span"> ESCOM </span></p>            
+        </section>
+
         <main>
-            <!-- Inicio Sección: ¿Quienes Somos? -->
-            <section class="hcontenedor cont-section" id="quienesSomos">
-                <h2 class="subtitulo" >¿Quienes Somos?</h2> 
-                <div class="cont-qs">
+            <section id="quienesSomos">
+                <div class="cont-qs-main">
+                    <h2 class="subtitulo" >¿Quiénes Somos?</h2>                
                     <div class="info-qs">
                         <div class="info-qs-main">
+                            <div class="img-info">
+                                <img class="img-info" src="./img/escom.jpg" alt="foto escom">  
+                                <figcaption class="img-caption">Escuela Superior de Cómputo</figcaption>
+                            </div> 
                             <p class="info">Bienvenido a la página de Microsoft en la <span class="escom">ESCOM</span></p> 
                             <p class="info">Somos una página creada por alumnos para alumnos.</p> 
-                        </div>        
-                        <div class="img-info">
-                            <img class="img-info" src="./img/escom.jpg" alt="foto escom">  
-                            <figcaption class="img-caption">Escuela Superior de Cómputo</figcaption>
-                        </div>                
+                        </div>                                       
                     </div>            
-                    <div class="cards-cont">
-                        <div class="card-qs">
-                            <h3 class="sub-qs">Objetivo</h3>
-                            <p class="info ind-info">El objetivo principal de este proyecto es dar a conocer los objetivos, productos y servicios que ofrece la empresa Microsoft tanto para el público en general como para los estudiantes, concretamente de la ESCOM, ya sea de empleo, cursos académicos, etc. </p>
-                        </div> 
-                        <div class="card-qs">
-                            <h3 class="sub-qs">Formulario</h3>
-                            <p class="info ind-info">La página cuenta con un formulario en su parte final de, el cúal, recabará los datos del usuario interesado, para que a su correo electrónico le llegue información sobre lo que está sucediendo con la empresa en cuestión y más que nada con las ofertas vigentes que esta ofrezca.</p>
-                        </div>                        
-                        <div class="card-qs">
-                            <h3 class="sub-qs">Actualizaciones</h3>
-                            <p class="info ind-info">Para los usuarios que no deseen colocar sus datos en el formulario, este proyecto se irá actualizando conforme pase el tiempo con lo que Microsoft anuncie, ya sea eventos, conferencias, ofertas laborales, etc.</p>
+                </div>
+
+                <div class="cards-cont">
+                    <div class="card-qs">
+                        <h3 class="sub-qs">Objetivo</h3>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-current-location" width="40" height="40" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                            <circle cx="12" cy="12" r="3" />
+                            <circle cx="12" cy="12" r="8" />
+                            <line x1="12" y1="2" x2="12" y2="4" />
+                            <line x1="12" y1="20" x2="12" y2="22" />
+                            <line x1="20" y1="12" x2="22" y2="12" />
+                            <line x1="2" y1="12" x2="4" y2="12" />
+                          </svg>
+                        <p class="info-card ind-info">El objetivo principal de este proyecto es dar a conocer los objetivos, productos y servicios que ofrece la empresa Microsoft tanto para el público en general como para los estudiantes, concretamente de la ESCOM, ya sea de empleo, cursos académicos, etc. </p>
+                    </div> 
+                    <div class="card-qs">
+                        <h3 class="sub-qs">Formulario</h3>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-notes" width="40" height="40" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                            <rect x="5" y="3" width="14" height="18" rx="2" />
+                            <line x1="9" y1="7" x2="15" y2="7" />
+                            <line x1="9" y1="11" x2="15" y2="11" />
+                            <line x1="9" y1="15" x2="13" y2="15" />
+                          </svg>
+                        <p class="info-card ind-info">La página cuenta con un formulario en su parte final de, el cúal, recabará los datos del usuario interesado, para que a su correo electrónico le llegue información sobre lo que está sucediendo con la empresa en cuestión y más que nada con las ofertas vigentes que esta ofrezca.</p>
+                    </div>                        
+                    <div class="card-qs">
+                        <h3 class="sub-qs">Actualizaciones</h3>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-refresh" width="40" height="40" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                            <path d="M20 11a8.1 8.1 0 0 0 -15.5 -2m-.5 -4v4h4" />
+                            <path d="M4 13a8.1 8.1 0 0 0 15.5 2m.5 4v-4h-4" />
+                          </svg>
+                        <p class="info-card ind-info">Para los usuarios que no deseen colocar sus datos en el formulario, este proyecto se irá actualizando conforme pase el tiempo con lo que Microsoft anuncie, ya sea eventos, conferencias, ofertas laborales, etc.</p>
+                    </div>
+                </div>         
+                
+            </section> 
+                
+
+            <section class="contenedor" id="servicio">
+                <h2 class="subtitulo">Servicios</h2>
+                <div class="contenedor-servicio">
+                    <img class="img-servicio" src="./img/serviciosimg/servicios.jpg" alt="img-celular">
+                    <div>
+                        <div class="servicio">
+                            <h3 class="n-servicio"><span class="number">1</span>Conoce</h3>
+                            <p class="servicio-texto">Aplicaciones eficaces para la productividad, conexión y seguridad</p>
                         </div>
-                    </div>            
-                </div>       
+                        <div class="servicio"> 
+                            <h3 class="n-servicio"><span class="number">2</span>Beneficios</h3>
+                            <p class="servicio-texto">Funciona en multiples Dispositivos</p>
+                        </div>
+
+                        <div class="servicio">
+                            <h3 class="n-servicio"><span class="number">3</span>A tu Alcance</h3>
+                            <p class="servicio-texto">Para Windows, macOS, iOS y Android</p>
+                        </div>                      
+                    </div>
+                </div>
+
+                <div class="carousel">
+                    <div class="carousel__contenedor">    
+                        <!-- <-- El botón de izquierda deberia ir aqui -- -->                                
+                        <div class="carousel__lista">
+                            <div class="carousel__elemento">
+                                <img src="./img/serviciosimg/access.png" alt="LogoAccess">
+                                <p> Logo de Access</p>
+                            </div>
+                            <div class="carousel__elemento">
+                                <img src="./img/serviciosimg/crunchyroll.png" alt="LogoAccess">
+                                <p> Logo Crunchy</p>
+                            </div>
+                            <div class="carousel__elemento">
+                                <img src="./img/serviciosimg/disney.png" alt="LogoAccess">
+                                <p> Logo de Disney</p>
+                            </div>
+                            <div class="carousel__elemento">
+                                <img src="./img/serviciosimg/education.jpg" alt="LogoAccess">
+                                <p> Logo de Eductaion</p>
+                            </div>
+                            <div class="carousel__elemento">
+                                <img src="./img/serviciosimg/facebook.png" alt="LogoAccess">
+                                <p> Logo de Fb</p>
+                            </div>
+                        </div>     
+
+                        <button aria-label="Anterior" class="carousel__anterior">
+                            <i class="fa-solid fa-chevron-left"></i>
+                        </button>           
+
+                        <button aria-label="Siguiente" class="carousel__siguiente">
+                            <i class="fa-solid fa-chevron-right"></i>
+                        </button>
+                    </div>
+                    <div role="tablist" class="carousel__indicadores"></div>                    
+                </div>  
+                    
+                                      
+                    
+                
+                    
+            </section>    
+
+
+            <section class="contenedor" id="oportunidades">
+                <h2 class="subtitulo">Oportunidades</h2>   
+                    
             </section>
-            <!-- Fin Sección: ¿Quienes Somos? -->
+             
+
 
         </main>
         <footer>
             
         </footer>
-        
+        <script src="./js/menu.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/glider-js@1.7.3/glider.min.js"></script>
+        <script src="https://kit.fontawesome.com/48086ef497.js" crossorigin="anonymous"></script>
+        <script src="./js/prueba.js"></script>
     </body>
 </html>
