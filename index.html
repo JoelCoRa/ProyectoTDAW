@@ -51,7 +51,9 @@
         <main>
             <section id="quienesSomos">
                 <div class="cont-qs-main">
-                    <h2 class="subtitulo" >¿Quiénes Somos?</h2>                
+                    <div class="cont-subtitulo">
+                        <h2 class="subtitulo" >¿Quiénes Somos?</h2>         
+                    </div>
                     <div class="info-qs">
                         <div class="info-qs-main">
                             <div class="img-info">
@@ -103,7 +105,9 @@
             </section>                 
 
             <section class="contenedor" id="servicios">
-                <h2 class="subtitulo">Servicios</h2>
+                <div class="cont-subitutlo">
+                    <h2 class="subtitulo">Servicios</h2>
+                </div>                
                 <div class="contenedor-servicio">
                     <div class="intro-servicios">
                         <div class="img-servicios">
@@ -344,19 +348,184 @@
             </section>  
 
             <section class="contenedor" id="oportunidades">
-                <h2 class="subtitulo">Oportunidades</h2>   
+                <div class="cont-subtitulo">
+                    <h2 class="subtitulo">Oportunidades</h2>   
+                </div>
+                <div class="cont-op">
+                    <div class="card-op">
+                        <div class="card-head">
+                            <img class="img-card-op" src="./img/Oportunidades/reclutamiento.jpg" alt="imagenReclutamiento">
+                            <h2 class="card-title">Sesiones de Reclutamiento</h2>
+                        </div>                    
+                        <div class="card-body">
+                            <ul class="list-op">
+                                <li class="info-op">Se realizan de 2-3 veces al año.</li>
+                                <li class="info-op">Por el tema COVID, se realizan de manera virtual via Zoom.</li>
+                                <li class="info-op">Duran aproximadamente 1 hora.</li>
+                                <li class="info-op">Aplica para estudiantes y egresados.</li>
+                            </ul>
+                        </div>  
+                        <div class="card-foot">
+                            <p class="info-op-foot">Última sesión: <span class="ultimo">01 de septiembre 2021</span></p>   
+                            <p class="info-op-foot">Espera la siguiente muy pronto...!!!</p>
+                        </div>      
+                        
+                    </div>
+                    <div class="card-op">
+                        <div class="card-head">
+                            <img class="img-card-op" src="./img/Oportunidades/cursos.png" alt="imagenCursos">
+                            <h2 class="card-title">Cursos</h2>    
+                        </div>
+                        <div class="card-body">
+                            <ul class="list-op">
+                                <li class="info-op">Se ofrecen una gran cantidad, a lo largo del año.</li>
+                                <li class="info-op">Por el tema COVID, todos se realizan de manera virtual.</li>
+                                <li class="info-op">Ofrecen certificación directa de Microsoft.</li>
+                                <li class="info-op">La mayoría de ellos son de productos de Microsoft.</li>
+                            </ul>
+                        </div>    
+                        <div class="card-foot">
+                            <p class="info-op-foot">Último curso ofrecido: <br> <span class="ultimo">28 de septiembre 2021 <br>(Microsoft AZ900 Fundamentals)</span></p>   
+                            <p class="info-op-foot">Espera el siguiente muy pronto...!!!</p>
+                        </div>          
+                    </div>
+                    <div class="card-op">
+                        <div class="card-head">
+                            <img class="img-card-op" src="./img/Oportunidades/diplomado.jpg" alt="imagenDiplomados">
+                            <h2 class="card-title">Diplomados</h2>
+                        </div>
+                        <div class="card-body">
+                            <ul class="list-op">
+                                <li class="info-op">Se realizan varias veces al año</li>
+                                <li class="info-op">Por lo general son de productos Microsoft</li>
+                                <li class="info-op">Pueden durar desde 1 mes hasta 1 semestre</li>
+                                <li class="info-op">La mayoria son dirigidos al personal docente y PAAE</li>
+                            </ul>
+                        </div>
+                        <div class="card-foot">
+                            <p class="info-op-foot">Último Diplomado: <span class="ultimo">2 de Mayo 2021 (Microsoft Teams)</span></p>   
+                            <p class="info-op-foot">Espera el siguiente muy pronto...!!!</p>
+                        </div>  
+                    </div>
+                </div>
                     
-            </section>             
-
-
-        </main>
-        <footer>
+            </section>      
             
+            <section class="contenedor" id="contacto">
+                <div class="cont-subtitulo">
+                    <h2 class="subtitulo">Formulario de Contacto</h2>
+                </div>
+                <div class="cont-form">
+                    <form class="formulario" action="./scripts/respuesta.php" method="post" enctype="application/x-www-form-urlencoded">                  
+                        <div class="cont-datos">
+                            <label class="etiqueta" for="nombre">Nombre</label>
+                            <input class="entrada" type="text" placeholder="Tu Nombre" id="nombre" name="nombre" maxlength="40" required>
+                            <label class="etiqueta" for="apellido">Apellidos</label>
+                            <input class="entrada" type="text" placeholder="Tu(s) Apellido(s)" id="apellido" name="apellido" maxlength="80" required>   
+                            <label class="etiqueta" for="sexo">Sexo</label>  
+                            <div class="sexo">       
+                                <div class="opcion-sexo">
+                                    <input id="hombre" name="sexo" value="Hombre" type="radio">
+                                    <label class="etiqueta" for="hombre">Hombre</label>                            
+                                </div>    
+                                <div class="opcion-sexo">
+                                    <input id="mujer" name="sexo" value="Mujer" type="radio">
+                                    <label class="etiqueta" for="mujer">Mujer</label>                            
+                                </div>  
+                                <div class="opcion-sexo">
+                                    <input id="SinEspecificar" name="sexo" value="SinEspecificar" type="radio">  
+                                    <label class="etiqueta" for="SinEspecificar">SinEspecificar</label>                         
+                                </div>                  
+                            </div>
+                            <label class="etiqueta" for="FechaNacimiento">Fecha de nacimiento</label>
+                            <input class="entrada" type="date" id="FechaNacimiento" name="FechaNacimiento" value="2021-11-16" min="1900-01-01" max="2030-12-01" required>                      
+                        
+                            <label class="etiqueta" for="semestre">Semestre</label>
+                            <input class="entrada" list="semestre">
+                            <datalist id="semestre">
+                                <option value="1"></option>
+                                <option value="2"></option>
+                                <option value="3"></option>
+                                <option value="4"></option>
+                                <option value="5"></option>
+                                <option value="6"></option>
+                                <option value="7"></option>
+                                <option value="8"></option>                        
+                            </datalist>               
+                            <label class="etiqueta" for="correo">Correo Electrónico</label>
+                            <input class="entrada" type="email" placeholder="Correo" id="correo" name="correo" required>           
+                            <label class="etiqueta" for="telefono">Teléfono</label>
+                            <input class="entrada" type="tel" placeholder="Tu Celular" id="telefono" name="telefono" maxlength="10" required>     
+        
+                            <input class="boton" type="submit" value="Enviar">                                  
+                        </div>   
+                    </form>
+                </div>
+            </section>
+        </main>
+        <footer class="cont-footer">
+            <div class="row">
+                <div class="footer-col">
+                    <h3 class="titulo-foot">ESCOM IPN<br></h3>
+                    <p class="info-foot">Unidad Profesional Adolfo López Mateos, 07320 Ciudad de México, CDMX</p>
+                    <div class="mapa">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3760.8710117849364!2d-99.14890028558797!3d19.504184543443!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1f94c06d75fd7%3A0x3fe1567da2190ac9!2sESCOM%20-%20Escuela%20Superior%20de%20C%C3%B3mputo%20-%20IPN!5e0!3m2!1ses!2smx!4v1639415427896!5m2!1ses!2smx" width="210" height="195" style="border:2px;" allowfullscreen="" loading="lazy"></iframe>
+                    </div>                    
+                </div>
+                <div class="footer-col">
+                    <h3 class="titulo-foot">Corporativo Microsoft<br></h3>
+                    <p class="info-foot">Vasco de Quiroga 3200, Santa Fe, Zedec Sta Fé, Álvaro Obregón, 01219 Ciudad de México, CDMX</p>
+                    <div class="mapa">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d60225.05625554114!2d-99.29946932089842!3d19.366294000000007!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d201196dca8199%3A0xffe7560012c3a23b!2sCorporativo%20Microsoft%20M%C3%A9xico!5e0!3m2!1ses!2smx!4v1639416190787!5m2!1ses!2smx" width="210" height="195" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    </div>
+                    
+                </div>
+                <div class="footer-col"> 
+                    <h3 class="titulo-foot">Contactanos</h3>
+                    <!-- Logo de fb -->
+                    <div class="logos">
+                        <a href="https://www.facebook.com/MicrosoftLatam/?brand_redir=20528438720" target="_blank">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="rs icon icon-tabler icon-tabler-brand-facebook" 
+                                width="40" height="40" viewBox="0 0 24 24" stroke-width="1.5" stroke="#0000ab" fill="none" 
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                <path d="M7 10v4h3v7h4v-7h3l1 -4h-4v-2a1 1 0 0 1 1 -1h3v-4h-3a5 5 0 0 0 -5 5v2h-3" />
+                            </svg>
+                        </a>
+                    <!-- Logo Twitter -->
+                        <a href="https://twitter.com/Microsoft?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" target="_blank">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="rs icon icon-tabler icon-tabler-brand-twitter" 
+                                width="40" height="40" viewBox="0 0 24 24" stroke-width="1.5" stroke="#00abfb" fill="none" 
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                <path d="M22 4.01c-1 .49 -1.98 .689 -3 .99c-1.121 -1.265 -2.783 -1.335 -4.38 -.737s-2.643 2.06 -2.62 3.737v1c-3.245 .083 -6.135 -1.395 -8 -4c0 0 -4.182 7.433 4 11c-1.872 1.247 -3.739 2.088 -6 2c3.308 1.803 6.913 2.423 10.034 1.517c3.58 -1.04 6.522 -3.723 7.651 -7.742a13.84 13.84 0 0 0 .497 -3.753c-.002 -.249 1.51 -2.772 1.818 -4.013z" />
+                            </svg>
+                        </a>    
+                    <!-- Logo Instagram -->
+                        <a href="https://www.instagram.com/microsoft/?hl=es" target="_blank">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-instagram" width="44" height="44" viewBox="0 0 24 24" stroke-width="1" stroke="#7f5345" fill="none" stroke-linecap="round" stroke-linejoin="round" >
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                <rect x="4" y="4" width="16" height="16" rx="4" />
+                                <circle cx="12" cy="12" r="3" />
+                                <line x1="16.5" y1="7.5" x2="16.5" y2="7.501" />
+                              </svg>
+                        </a>
+                    </div>                    
+                    <p class="contacto-txt">Este Proyecto fue realizado por estudiantes de la ESCOM.</p>
+                    <ul class="alumnos">
+                        <li class="datos-alumnos">Colín Ramiro Joel <span class="boleta">2020630675</span></li>
+                        <li class="datos-alumnos">Cortés Olvera Eduardo Maximiliano <span class="boleta">2020XXXXXX</span></li>
+                        <li class="datos-alumnos">Escalona Bastida Yael Tonatiuh <span class="boleta">2020XXXXXX</span></li>
+                        <li class="datos-alumnos">Peña Barragan Rafael Alexander <span class="boleta">2020XXXXXX</span></li>
+                    </ul>        
+                    <p class="contacto-txt">Bajo la docencia del profesor Soto Ramos Manuel Alejandro.</p>    
+                </div>
+            </div>
+            <p class="txt-footer" >Derechos Reservados&copy; ESCOM 2021</p>
+            <div class="linea"></div>         
         </footer>
         <script src="./js/menu.js"></script>
-
-
         <script src="https://kit.fontawesome.com/48086ef497.js" crossorigin="anonymous"></script>
-        <script src="./js/prueba.js"></script>
+        <script src="./js/slider.js"></script>
     </body>
 </html>
