@@ -39,7 +39,7 @@ img{
     display: flex;
     flex-direction: column; 
     align-items: center;   
-    position: relative;
+    /* position: sticky; */
     min-height: 10rem;    
     width: 100%;
     top: 0;
@@ -208,22 +208,24 @@ img{
 /* Inicio ¿Quienes somos? */
 .contenedor{
     width: 100%;
-    max-width: 1600px;
+    max-width: 160rem;
     overflow: hidden;
     margin: auto;
-    padding: 3rem 0; 
+    padding: 1rem 0; 
 }
 .cont-subtitulo{
+    /* margin-top: 2rem; */
     display: flex;
     justify-content: center;
 }
 .subtitulo{
     display: inline;       
+    text-align: center;
 
     background: #b92b27;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #1565C0, #b92b27);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, #1565C0, #b92b27); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    
+ 
     border-radius: 1.5rem;
     color: var(--blanco);
     margin: 2rem;
@@ -457,7 +459,7 @@ img{
     border-color: var(--negro);
 }
 .card-titulo{
-    font-size: 3rem;
+    font-size: 2rem;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: wheat;
     border-radius: 1rem;
@@ -465,6 +467,11 @@ img{
     text-align: center;
     color: rgb(5, 5, 5);
     box-shadow: 11px 4px 13px -3px rgba(0, 0, 0, 0.75);
+}
+@media (min-width: 800px){
+    .card-titulo{
+        font-size: 3rem;
+    }
 }
 .contenedor-texto{
     width: 90%;
@@ -691,7 +698,7 @@ img{
     margin: 2rem auto;
     border-radius: 3rem;
     padding: 1rem;
-    background-image: url(../img/Fondos/fondoconcreto.jpg);
+    background-image: url(../img/Fondos/fondomadera.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     -webkit-box-shadow: 6px 6px 19px 0px rgba(0,0,0,0.75);
@@ -700,7 +707,7 @@ img{
 }
 @media (min-width: 800px){
     .cont-form{
-        width: 50%;
+        width: 40%;
     }
 }
 .titulo-form{
@@ -716,44 +723,11 @@ img{
     display: flex;
     flex-direction: column;
 }
-.sexo{
-    width: 100%;
-    display: flex;
-    justify-content: space-around;    
-    margin: 1rem auto;
-    margin-bottom: 1.5rem;    
-}
-.opcion-sexo{
-    border: 1px solid #c9b5b3;
-    border-radius: 1rem;
-    
-    color: rgb(10, 6, 6);    
-    margin-top: 0.5rem;
-    background-color: #eeedf5;
-}
-@media (min-width: 800px){
-    .opcion-sexo{
-        padding: 0.5rem;
-    }
-    .opcion-sexo:hover{
-        cursor: pointer;
-        background-color: #c8c7cc;
-        transition: 0.5s;
-    }
-    .opcion-sexo label:hover{
-        cursor: pointer;
-        background-color: #c8c7cc;  
-        transition: 1.5s;
-    }
-}
-
-.opcion-sexo input:checked + label{
-    color: rgb(243, 97, 0);
-}
 
 .etiqueta{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-weight: bold;    
+    font-weight: bold;
+    font-style: italic;
 }
 .entrada{
     margin-top: 0.5rem;
@@ -869,3 +843,6 @@ img{
     border: 1px solid transparent;
 }
 /* Fin Footer */
+.pagina-respuesta{
+    background-color: red;
+}

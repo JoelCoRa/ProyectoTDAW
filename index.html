@@ -17,10 +17,7 @@
         <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@600&display=swap" rel="stylesheet">  
         <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@100;300;600;700;900&family=Quicksand&display=swap" rel="stylesheet">  
 
-
-
-
-        <title>Microsoft en ESCOM EL BUENO</title>
+        <title>Microsoft en ESCOM</title>
     </head>
 
     <body>
@@ -42,14 +39,13 @@
                 </ul>
             </nav>       
         </header>
-
         <section class="bienvenida">
             <img src="./img/Fondos/fondo-bienvenida.jpeg" alt="fondo bienvenida">
             <p>Bienvenido al <br> portal <br><span class="bienvenida-span"> MICROSOFT </span> X <span class="bienvenida-span"> ESCOM </span></p>            
         </section>
 
         <main>
-            <section id="quienesSomos">
+            <section class="contenedor" id="quienesSomos">
                 <div class="cont-qs-main">
                     <div class="cont-subtitulo">
                         <h2 class="subtitulo" >¿Quiénes Somos?</h2>         
@@ -105,7 +101,7 @@
             </section>                 
 
             <section class="contenedor" id="servicios">
-                <div class="cont-subitutlo">
+                <div class="cont-subtitulo">
                     <h2 class="subtitulo">Servicios</h2>
                 </div>                
                 <div class="contenedor-servicio">
@@ -415,28 +411,20 @@
                 <div class="cont-subtitulo">
                     <h2 class="subtitulo">Formulario de Contacto</h2>
                 </div>
-                <div class="cont-form">
-                    <form class="formulario" action="./scripts/respuesta.php" method="post" enctype="application/x-www-form-urlencoded">                  
+                <div class="cont-form">                      
+                    <form class="formulario" action="validar.php" method="post">    
                         <div class="cont-datos">
                             <label class="etiqueta" for="nombre">Nombre</label>
                             <input class="entrada" type="text" placeholder="Tu Nombre" id="nombre" name="nombre" maxlength="40" required>
                             <label class="etiqueta" for="apellido">Apellidos</label>
                             <input class="entrada" type="text" placeholder="Tu(s) Apellido(s)" id="apellido" name="apellido" maxlength="80" required>   
                             <label class="etiqueta" for="sexo">Sexo</label>  
-                            <div class="sexo">       
-                                <div class="opcion-sexo">
-                                    <input id="hombre" name="sexo" value="Hombre" type="radio">
-                                    <label class="etiqueta" for="hombre">Hombre</label>                            
-                                </div>    
-                                <div class="opcion-sexo">
-                                    <input id="mujer" name="sexo" value="Mujer" type="radio">
-                                    <label class="etiqueta" for="mujer">Mujer</label>                            
-                                </div>  
-                                <div class="opcion-sexo">
-                                    <input id="SinEspecificar" name="sexo" value="SinEspecificar" type="radio">  
-                                    <label class="etiqueta" for="SinEspecificar">SinEspecificar</label>                         
-                                </div>                  
-                            </div>
+                            <select name="sexo" id="sexo">
+                                <option value="" disabled selected>--Seleccione--</option>
+                                <option value="Hombre">Hombre</option>
+                                <option value="Mujer">Mujer</option>
+                                <option value="SinEspecificar">Sin Especificar</option>
+                            </select>                            
                             <label class="etiqueta" for="FechaNacimiento">Fecha de nacimiento</label>
                             <input class="entrada" type="date" id="FechaNacimiento" name="FechaNacimiento" value="2021-11-16" min="1900-01-01" max="2030-12-01" required>                      
                         
@@ -457,9 +445,10 @@
                             <label class="etiqueta" for="telefono">Teléfono</label>
                             <input class="entrada" type="tel" placeholder="Tu Celular" id="telefono" name="telefono" maxlength="10" required>     
         
-                            <input class="boton" type="submit" value="Enviar">                                  
+                            <input class="boton" type="submit" value="Enviar" name="submit">                                  
                         </div>   
                     </form>
+                    
                 </div>
             </section>
         </main>
